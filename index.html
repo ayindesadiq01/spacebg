@@ -1,160 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
- <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPACE</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div class="container">
+  <!--NAVIGATION BAR-->
   <nav class="nav-links nav-bar-position">
-   <div class="logoo">
-    <img src="./shared/logo.svg" alt="space logo" class="logo">
-   </div>
-   <div class="short-line"></div>
-   <img src="./shared/icon-hamburger.svg" alt="menu icon" class="menu-icon icon">
-   <div class="bg-link hidden">
-    <ul class="link-items">
-     <img src="./shared/icon-close.svg" alt="close icon" class="close-icon icon">
-     <li class="link-list">
-      <a href="#home" class="linke active-link nav-link" data-nave="0">
-       <span class="link-no">00</span>
-       Home
-      </a>
-     </li>
-     <li class="link-list">
-      <a href="#destination" class="linke nav-link" data-nave="1">
-       <span class="link-no">01</span>
-       Destination
-      </a>
-     </li>
-     <li class="link-list">
-      <a href="#crew" class="linke nav-link" data-nave="2">
-       <span class="link-no">02</span>
-       Crew
-      </a>
-     </li>
-     <li class="link-list">
-      <a href="#technology" class="nav-link linke" data-nave="3">
-       <span class="link-no">03</span>
-       Technology
-      </a>
-     </li>
-    </ul>
-   </div>
+    <div class="logoo">
+      <img src="./shared/logo.svg" alt="space logo" class="logo">
+    </div>
+    <div class="short-line"></div>
+    <img src="./shared/icon-hamburger.svg" alt="menu icon" class="menu-icon icon">
+    <div class="bg-link hidden">
+      <ul class="link-items">
+        <img src="./shared/icon-close.svg" alt="close icon" class="close-icon icon">
+        <li class="link-list">
+          <a href="#home" class="linke active-link nav-link" data-nave="0"><span class="link-no">00</span>Home</a>
+        </li>
+        <li class="link-list">
+          <a href="#destination" class="linke nav-link" data-nave="1"><span class="link-no">01</span>Destination</a>
+        </li>
+        <li class="link-list">
+          <a href="#crew" class="linke nav-link" data-nave="2"><span class="link-no">02</span>Crew</a>
+        </li>
+        <li class="link-list">
+          <a href="#technology" class="nav-link linke" data-nave="3"><span class="link-no">03</span>Technology</a>
+        </li>
+      </ul>
+    </div>
   </nav>
+  <!--HOME BAR SECTION-->
   <section class="home section-active section-active--0 section" id="home">
-   <div class="space-ship">
-    <div class="space-wording">
-     <h4 class="space-text">SO, YOU WANT TO TRAVEL TO</h4>
-     <h1 class="big-space-text">SPACE</h1>
-     <p class="space-wordings">Let's face it: If you want to go to space you might as well genuinely go to outer space
-      and not hover kind og on the edge of it. Well sit back, and relax because we'll give you a truly out of this
-      world experience!</p>
+    <div class="space-ship">
+      <div class="space-wording">
+        <h4 class="space-text">SO, YOU WANT TO TRAVEL TO</h4>
+        <h1 class="big-space-text">SPACE</h1>
+        <p class="space-wordings">Let's face it: If you want to go to space you might as well genuinely go to outer space and not hover kind og on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!</p>
+      </div>
+      <div class="space-click">
+        <button class="explore">EXPLORE</button>
+      </div>
     </div>
-    <div class="space-click">
-     <button class="explore">EXPLORE</button>
-    </div>
-   </div>
   </section>
-
+  <!--DESTINATION BAR SECTION-->
   <section class="destination section section-active--1" id="destination">
-   <div class="destination-info">
-    <h4 class="world-map-heading"><span class="world-no">01</span>PICK YOUR DESTINATION</h4>
-    <div class="destination-world-details">
-     <div class="planet-img">
-      <img src="./destination/image-moon.png" alt="moon image" class="planet-image planet--1 active-planet">
-      <img src="./destination/image-mars.png" alt="mars image" class="planet-image planet--2">
-      <img src="./destination/image-europa.png" alt="europa image" class="planet-image planet--3">
-      <img src="./destination/image-titan.png" alt="titan image" class="planet-image planet--4">
-     </div>
-     <div class="world-map-details">
-      <div class="planet">
-       <button class="btn planet-list active-planet-details act-link" data-tab="1">Moon</button>
-       <button class="btn planet-list" data-tab="2">Mars</button>
-       <button class=" btn planet-list" data-tab="3">Europa</button>
-       <button class=" btn planet-list" data-tab="4">Titan</button>
+    <div class="destination-info">
+      <h4 class="world-map-heading"><span class="world-no">01</span>PICK YOUR DESTINATION</h4>
+      <div class="destination-world-details">
+        <!--Planet Images-->
+        <div class="planet-img">
+          <img src="./destination/image-moon.png" alt="moon image" class="planet-image planet--1 active-planet">
+          <img src="./destination/image-mars.png" alt="mars image" class="planet-image planet--2">
+          <img src="./destination/image-europa.png" alt="europa image" class="planet-image planet--3">
+          <img src="./destination/image-titan.png" alt="titan image" class="planet-image planet--4">
+        </div>
+
+        <!--Planet Information-->
+        <div class="world-map-details">
+          <div class="planet">
+            <!--Planet Button List-->
+            <button class="btn planet-list active-planet-details act-link" data-tab="1">Moon</button>
+            <button class="btn planet-list" data-tab="2">Mars</button>
+            <button class=" btn planet-list" data-tab="3">Europa</button>
+            <button class=" btn planet-list" data-tab="4">Titan</button>
+          </div>
+          <!--Planet Detais-->
+          <div class="planet-details">
+            <div class="planet-detail-each planet-detail--1 planet-active">
+              <div class="planet-name">MOON</div>
+              <p class="planet-text">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+              <div class="planet-info">
+                <div class="avg-distances">
+                  <p class="avg-distance">AVG. DISTANCE</p>
+                  <p class="avg-distance-text">284, 400 MIL. KM</p>
+                </div>
+                <div class="avg-distances">
+                  <p class="avg-distance">EST. TRAVEL TIME</p>
+                  <p class="avg-distance-text">3 DAYS</p>
+                </div>
+              </div>
+            </div>
+            <div class="planet-detail-each planet-detail--2">
+              <div class="planet-name">MARS</div>
+              <p class="planet-text">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest! It’s two and a half times the size of Everest!</p>
+              <div class="planet-info">
+                <div class="avg-distances">
+                  <p class="avg-distance">AVG. DISTANCE</p>
+                  <p class="avg-distance-text">225 MIL. KM</p>
+                </div>
+                <div class="avg-distances">
+                  <p class="avg-distance">EST. TRAVEL TIME</p>
+                  <p class="avg-distance-text">9 MONTHS</p>
+                </div>
+              </div>
+            </div>
+            <div class="planet-detail-each planet-detail--3">
+              <div class="planet-name">EUROPA</div>
+              <p class="planet-text">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+              <div class="planet-info">
+                <div class="avg-distances">
+                  <p class="avg-distance">AVG. DISTANCE</p>
+                  <p class="avg-distance-text">628 MIL. KM</p>
+                </div>
+                <div class="avg-distances">
+                  <p class="avg-distance">EST. TRAVEL TIME</p>
+                  <p class="avg-distance-text">3 YEARS</p>
+                </div>
+              </div>
+            </div>
+            <div class="planet-detail-each planet-detail--4">
+              <div class="planet-name">MOON</div>
+              <p class="planet-text">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+              <div class="planet-info">
+                <div class="avg-distances">
+                  <p class="avg-distance">AVG. DISTANCE</p>
+                  <p class="avg-distance-text">1.6 BIL. KM</p>
+                </div>
+                <div class="avg-distances">
+                  <p class="avg-distance">EST. TRAVEL TIME</p>
+                  <p class="avg-distance-text">7 YEARS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="planet-details">
-       <div class="planet-detail-each planet-detail--1 planet-active">
-        <div class="planet-name">MOON</div>
-        <p class="planet-text">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
-        </p>
-        <div class="planet-info">
-         <div class="avg-distances">
-          <p class="avg-distance">AVG. DISTANCE</p>
-          <p class="avg-distance-text">284, 400 MIL. KM</p>
-         </div>
-         <div class="avg-distances">
-          <p class="avg-distance">EST. TRAVEL TIME</p>
-          <p class="avg-distance-text">3 DAYS</p>
-         </div>
-        </div>
-       </div>
-       <div class="planet-detail-each planet-detail--2">
-        <div class="planet-name">MARS</div>
-        <p class="planet-text">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest! It’s two and a half times the size of Everest!
-        </p>
-        <div class="planet-info">
-         <div class="avg-distances">
-          <p class="avg-distance">AVG. DISTANCE</p>
-          <p class="avg-distance-text">225 MIL. KM</p>
-         </div>
-         <div class="avg-distances">
-          <p class="avg-distance">EST. TRAVEL TIME</p>
-          <p class="avg-distance-text">9 MONTHS</p>
-         </div>
-        </div>
-       </div>
-       <div class="planet-detail-each planet-detail--3">
-        <div class="planet-name">EUROPA</div>
-        <p class="planet-text">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s
-        perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
-        </p>
-        <div class="planet-info">
-         <div class="avg-distances">
-          <p class="avg-distance">AVG. DISTANCE</p>
-          <p class="avg-distance-text">628 MIL. KM</p>
-         </div>
-         <div class="avg-distances">
-          <p class="avg-distance">EST. TRAVEL TIME</p>
-          <p class="avg-distance-text">3 YEARS</p>
-         </div>
-        </div>
-       </div>
-       <div class="planet-detail-each planet-detail--4">
-        <div class="planet-name">MOON</div>
-        <p class="planet-text">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred
-        degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
-        </p>
-        <div class="planet-info">
-         <div class="avg-distances">
-          <p class="avg-distance">AVG. DISTANCE</p>
-          <p class="avg-distance-text">1.6 BIL. KM</p>
-         </div>
-         <div class="avg-distances">
-          <p class="avg-distance">EST. TRAVEL TIME</p>
-          <p class="avg-distance-text">7 YEARS</p>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
     </div>
-    
-   </div>
   </section>
+  <!--CREW SECTION-->
   <section class="crew section section-active--2" id="crew">
     <div class="crew-info">
-      <h4 class="world-map-heading"><span class="world-no">01</span>MEET YOUR CREW</h4>
-      <div class="crew-details"></div>
+      <h4 class="world-map-heading"><span class="world-no">02</span>MEET YOUR CREW</h4>
+      <!--Crew Detais-->
+      <div class="crew-informations">
+        <!--Crew Text-->
+        <div class="crew-detail crew-detail--1 active-crew">
+          <div class="crew-text">
+            <h4 class="crew-occupation">Commander</h4>
+            <h2 class="crew-name">Douglas Hurley</h2>
+            <p class="crew-wordings">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA
+              astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+          </div>
+          <div class="crew-img">
+            <img src="./crew/image-douglas-hurley.png" alt="crew image douglas" class="crew-image">
+          </div>
+        </div>
+        <div class="crew-detail crew-detail--2">
+          <div class="crew-text">
+            <h4 class="crew-occupation">Mission Specialist</h4>
+            <h2 class="crew-name">Mark Shuttleworth</h2>
+            <p class="crew-wordings">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+          </div>
+          <div class="crew-img">
+            <img src="./crew/image-mark-shuttleworth.png" alt="crew image douglas" class="crew-image">
+          </div>
+        </div>
+        <div class="crew-detail crew-detail--3">
+          <div class="crew-text">
+            <h4 class="crew-occupation">Pilot</h4>
+            <h2 class="crew-name">Victor Glover</h2>
+            <p class="crew-wordings">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.</p>
+          </div>
+          <div class="crew-img">
+            <img src="./crew/image-victor-glover.png" alt="crew image douglas" class="crew-image">
+          </div>
+        </div>
+        <div class="crew-detail crew-detail--4">
+          <div class="crew-text">
+            <h4 class="crew-occupation">Flight Engineer</h4>
+            <h2 class="crew-name">Anousheh Ansari</h2>
+            <p class="crew-wordings">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.</p>
+          </div>
+          <div class="crew-img">
+            <img src="./crew/image-anousheh-ansari.png" alt="crew image douglas" class="crew-image">
+          </div>
+        </div>
+        <div class="dot">
+          <button class="dots-dot dots-dot--active" data-slide="1"></button>
+          <button class="dots-dot" data-slide="2"></button>
+          <button class="dots-dot" data-slide="3"></button>
+          <button class="dots-dot" data-slide="4"></button>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="technology section section-active--3" id="technology"></section>
-
- </div>
- <script src="script.js"></script>
+  <!--TECHNOLOGY SECTION-->
+  <section class="technology section section-active--3" id="technology">
+    <div class="technology-info">
+      <h4 class="world-map-heading"><span class="world-no">03</span>SPACE LAUNCH 101</h4>
+      <div class="tech-information">
+        <div class="tech-lists">
+          <button class="technology-button active-technology " data-btn="1">1</button>
+          <button class="technology-button" data-btn="2">2</button>
+          <button class="technology-button" data-btn="3">3</button>
+        </div>
+        <div class="technology-detail">
+          <div class="tech-details tech-details--1 active-details">
+            <h5 class="tech-term">THE TERMINOLOGY</h5>
+            <h1 class="tech-type">LAUNCH VEHICLE</h1>
+            <p class="tech-text">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+            it's quite an awe-inspiring sight on the launch pad!</p>
+          </div>
+          <div class="tech-details tech-details--2">
+            <h5 class="tech-term">THE TERMINOLOGY</h5>
+            <h1 class="tech-type">SPACESPORT</h1>
+            <p class="tech-text">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or
+            airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the
+            Earth’s rotation for launch.</p>
+          </div>
+          <div class="tech-details tech-details--3">
+            <h5 class="tech-term">THE TERMINOLOGY</h5>
+            <h1 class="tech-type">SPACE CAPSULE</h1>
+            <p class="tech-text">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+          </div>
+        </div>
+        <div class="tech-img">
+          <img src="./technology/image-launch-vehicle-portrait.jpg" alt="launch vehicle" class="technology-image tech-image--1 active-tech-image">
+          <img src="./technology/image-spaceport-portrait.jpg" alt="launch vehicle" class="technology-image tech-image--2">
+          <img src="./technology/image-space-capsule-portrait.jpg" alt="launch vehicle" class="technology-image tech-image--3">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
