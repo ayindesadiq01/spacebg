@@ -25,6 +25,7 @@ const links = document.querySelectorAll('.linke');
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(navlink => {
  navlink.addEventListener('click', function(e){
+  e.preventDefault();
   const clicked = e.target.closest('.nav-link')
   console.log(clicked)
   sections.forEach(section => {
