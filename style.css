@@ -276,8 +276,6 @@ ul li a:hover::before {
     width: 0;
   }
 }
-
-
 .destination {
  background: url('./destination/background-destination-desktop.jpg');
  width: 100%;
@@ -735,5 +733,4 @@ ul li a:hover::before {
 }
 .section-active {
   display: grid;
-
 }
