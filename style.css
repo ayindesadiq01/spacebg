@@ -424,7 +424,7 @@ ul li a:hover::before {
   min-height: 100vh;
  }
  .destination-info {
-  margin: 7em 0;
+  margin: 5em 0;
  }
  .planet-image {
   width: 300px;
@@ -443,6 +443,9 @@ ul li a:hover::before {
  }
  .avg-distances {
   margin-right: 0;
+ }
+ .destination-world-details {
+  margin-top: -2em;
  }
 }
 
@@ -602,7 +605,7 @@ ul li a:hover::before {
   }
   .crew-img >img {
     width: 80%;
-    height: 250px;
+    height: 280px;
   }
   .crew-detail {
     margin-top: -4em;
@@ -613,6 +616,9 @@ ul li a:hover::before {
   .crew-name {
     font-size: 1.8rem;
     margin: .8em 0;
+  }
+  .dot {
+    margin-top: 1em;
   }
 }
 
