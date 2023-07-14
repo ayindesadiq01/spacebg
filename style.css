@@ -436,7 +436,7 @@ ul li a:hover::before {
   margin-top: 2em;
  }
  .planet-name {
-  font-size: 5rem;
+  font-size: 4rem;
  }
  .planet-text {
   font-size: 1rem;
@@ -445,7 +445,7 @@ ul li a:hover::before {
   margin-right: 0;
  }
  .destination-world-details {
-  margin-top: -2em;
+  margin-top: -2.5em;
  }
 }
 
@@ -598,7 +598,7 @@ ul li a:hover::before {
   }
   .crew-info {
     width: 100%;
-    margin-top: 6em;
+    margin-top: 4.5em;
   }
   .crew-information{
     width: 100%;
@@ -615,7 +615,7 @@ ul li a:hover::before {
   }
   .crew-name {
     font-size: 1.8rem;
-    margin: .8em 0;
+    margin: .5em 0;
   }
   .dot {
     margin-top: 1em;
@@ -782,6 +782,7 @@ ul li a:hover::before {
   }
   .technology-info {
     text-align: center;
+    margin-top: 4.5em;
   }
 }
 .section {
