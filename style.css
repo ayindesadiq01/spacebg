@@ -6,8 +6,9 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
-  height: 100vh;
+  /* width: 100%;
+  height: 100vh; */
+  background-size: 100%;
 }
 
 /* HOME */
@@ -195,6 +196,7 @@ ul li a:hover::before {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
+    margin: 0;
     }
 
   .nav-links {
@@ -270,7 +272,7 @@ ul li a:hover::before {
   }
 
   .space-click {
-    margin: 4em 0;
+    /* margin: 4em 0; */
   }
 
   ul li a:hover::before {
