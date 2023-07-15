@@ -615,7 +615,7 @@ ul li a:hover::before {
   }
   .crew-img >img {
     width: 90%;
-    height: 60vh;
+    height: 300px;
     margin: auto 0;
   }
   .crew-detail {
