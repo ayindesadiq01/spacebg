@@ -234,6 +234,7 @@ ul li a:hover::before {
 
   .space-ship {
     width: 100%;
+    margin-top: 9em;
   }
   .space-wording {
     width: 100%;
@@ -613,8 +614,9 @@ ul li a:hover::before {
     width: 100%;
   }
   .crew-img >img {
-    width: 100%;
-    height: 80vh;
+    width: 90%;
+    height: 60vh;
+    margin: auto 0;
   }
   .crew-detail {
     margin-top: -4em;
