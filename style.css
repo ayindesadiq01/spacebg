@@ -613,6 +613,9 @@ ul li a:hover::before {
   .crew-information{
     width: 100%;
   }
+  .crew-img {
+    margin-top: 2em;
+  }
   .crew-img >img {
     width: 90%;
     height: 300px;
@@ -622,17 +625,18 @@ ul li a:hover::before {
     margin-top: -4em;
   }
   .crew-occupation {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .crew-name {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: .5em 0;
   }
   .dot {
     margin-top: 3em;
   }
   .crew-wordings {
-    margin: 1em 0;
+    text-align: center;
+    margin: 2em 0;
   }
 }
 
