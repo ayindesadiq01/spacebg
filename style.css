@@ -6,24 +6,25 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* width: 100%;
-  height: 100vh; */
-  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+}
+/* DAFAULT STYLE */
+.home, .destination, .crew, .technology {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white
 }
 
 /* HOME */
 .home {
   background-image: url('./home/background-home-desktop.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
-
 .icon {
   display: none;
 }
-
 nav {
   width: 100%;
   margin: 0 auto;
@@ -33,11 +34,9 @@ nav {
   align-items: center;
   align-content: center;
 }
-
 ul {
   list-style-type: none;
 }
-
 .bg-link {
   background: rgba(228, 228, 228, 0.3);
   padding: 1.5em 10em 1.5em 4em;
@@ -146,14 +145,45 @@ ul li a:hover::before {
   cursor: pointer;
 }
 
+/* DEFAULT BACKGROUND STYLE FOR MEDIA QUERY */
+@media(max-width: 768px) {
+    .home {
+      background-image: url('./home/background-home-tablet.jpg');
+    }
+    .destination {
+      background: url('./destination/background-destination-tablet.jpg');
+    }
+    .crew {
+      background: url('./crew/background-crew-tablet.jpg');
+    }
+    .technology {
+      background: url('./technology/background-technology-tablet.jpg');
+    }
+}
+@media (max-width: 425px) {
+.home {
+    background-image: url('./home/background-home-mobile.jpg');
+    }
+  }
+  .destination {
+    background: url('./destination/background-destination-mobile.jpg');
+  }
+  .crew {
+    background: url('./crew/background-crew-mobile.jpg');
+  }
 
+  /* HOME */
+  /* @media (max-width: 768px) {
+    .home, .destination, .crew, .technology {
+      
+    }
+  } */
 @media (max-width: 768px) {
   .home {
-    background-image: url('./home/background-home-tablet.jpg');
-    background-position: center;
+    height: auto;
+    background-repeat: none;
     background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100%;
+    background-position: center;
   }
   nav {
     padding: 2em;
@@ -170,6 +200,9 @@ ul li a:hover::before {
   }
   .bg-link {
     padding: 1.5em;
+  }
+  .space-click {
+    margin: 4em 0;
   }
   nav {
     padding: 0;
@@ -190,15 +223,10 @@ ul li a:hover::before {
   }
 
 @media (max-width: 425px) {
+  
   .home {
-    background-image: url('./home/background-home-mobile.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    margin: 0;
-    }
-
+    height:auto;
+  }
   .nav-links {
     padding: 1em;
     position: absolute;
@@ -207,7 +235,6 @@ ul li a:hover::before {
   .space-ship {
     width: 100%;
   }
-
   .space-wording {
     width: 100%;
     margin: 1em 0;
@@ -231,7 +258,7 @@ ul li a:hover::before {
 
   .bg-link {
     width: 60%;
-    height: 100vh;
+    height:100vh;
     position: absolute;
     top: 10px;
     left: 170px;
@@ -272,7 +299,7 @@ ul li a:hover::before {
   }
 
   .space-click {
-    /* margin: 4em 0; */
+    margin: 4em 0;
   }
 
   ul li a:hover::before {
@@ -281,9 +308,6 @@ ul li a:hover::before {
 }
 .destination {
  background: url('./destination/background-destination-desktop.jpg');
- width: 100%;
- height: 100vh;
- color: white;
 }
 .destination-info {
  color: white;
@@ -383,11 +407,10 @@ ul li a:hover::before {
 }
 @media (max-width: 768px) {
   .destination {
-    background: url('./destination/background-destination-tablet.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    height: auto;
+    background-repeat: none;
     background-size: cover;
-    min-height: 100vh;
+    background-position: center;
   }
   .destination-world-details {
     flex-direction: column;
@@ -396,7 +419,7 @@ ul li a:hover::before {
   }
   .destination-info {
     width: 100%;
-    margin: 8em 0;
+    margin: 10em 0;
     text-align: center;
   }
   .planet-image{
@@ -405,28 +428,30 @@ ul li a:hover::before {
   .world-map-details {
     margin: 0;
   }
+  .planet {
+    margin-top: 3em;
+  }
   .planet-info {
     flex-direction: column;
   }
   .avg-distances {
     margin-right: 0;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
   .planet-text {
-    padding-bottom: 2em;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 4em;
+    margin-bottom: 2em;
     border-bottom: 1px solid grey;
   }
 }
 @media (max-width: 425px) {
- .destination {
-  background: url('./destination/background-destination-mobile.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
- }
+  .destination {
+    height: auto;
+  }
  .destination-info {
-  margin: 5em 0;
+  margin-top: 8em;
  }
  .planet-image {
   width: 300px;
@@ -456,13 +481,7 @@ ul li a:hover::before {
 
 
 .crew {
- background: url('./crew/background-crew-desktop.jpg');
- width: 100%;
- height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
+  background: url('./crew/background-crew-desktop.jpg');
 }
 .crew-info {
   color: white;
@@ -541,12 +560,10 @@ ul li a:hover::before {
 
 @media (max-width: 768px) {
   .crew {
-    background: url('./crew/background-crew-tablet.jpg');
-    min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: auto;
+    background-repeat: none;
     background-size: cover;
-    min-height: 100vh;
+    background-position: center;
   }
   .crew-info {
     width: 70%;
@@ -556,9 +573,6 @@ ul li a:hover::before {
   }
   .crew-image {
     width: 100px;
-  }
-  .crew-information {
-    width: 100%;
   }
   .crew-text {
     margin-top: 4em;
@@ -587,16 +601,12 @@ ul li a:hover::before {
     position: relative;
     left: 0px;
     bottom: 0;
-    margin-top: 2em;
+    margin: 3em 0;
   }
 }
 @media (max-width: 425px) {
   .crew {
-    background: url('./crew/background-crew-mobile.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+    height: auto;
   }
   .crew-info {
     width: 100%;
@@ -627,12 +637,6 @@ ul li a:hover::before {
 
 .technology {
   background-image: url('./technology/background-technology-desktop.jpg');
-  width: 100%;
-  min-height: 100vh;
-  color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .technology-info {
   width: 80%;
@@ -724,12 +728,7 @@ ul li a:hover::before {
 
 @media (max-width: 768px) {
   .technology {
-    background: url('./technology/background-technology-tablet.jpg');
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+    height: auto;
   }
   .tech-information {
     flex-direction: column;
@@ -768,9 +767,9 @@ ul li a:hover::before {
   }
   .tech-image--1 {
     background: url('./technology/image-launch-vehicle-landscape.jpg');
-    background-position: center;
-    background-size: cover;
     background-repeat: none;
+    background-size: cover;
+    background-position: center;
   }
   .tech-image--2 {
     background: url('./technology/image-spaceport-landscape.jpg');
@@ -793,7 +792,15 @@ ul li a:hover::before {
 .section-active {
   display: grid;
 }
+
+
 @media (max-width: 425px) {
+  .technology {
+    height: auto;
+  }
+  .tech-lists {
+    margin-top: 1em;
+  }
   .active-tech-image{
     width: 100%;
     height: 400px
@@ -805,22 +812,23 @@ ul li a:hover::before {
     font-size: 2rem;
   }
   .tech-text{
-    font-size: .8rem;
+    font-size: .9rem;
+    margin: 1.5em 0;
+  }
+  .tech-image--1, .tech-image--2, .tech-image--3 {
+    background-position: center;
+    background-size: cover;
   }
   .tech-image--1 {
     background: url('./technology/image-launch-vehicle-portrait.jpg');
-    background-position: center;
-    background-size: cover;
     background-repeat: none;
   }
   .tech-image--2 {
     background: url('./technology/image-spaceport-portrait.jpg');
-    background-size: cover;
-    background-position: center;
   }
   .tech-image--3 {
     background: url('./technology/image-space-capsule-portrait.jpg');
-    background-size: cover;
     background-position: center;
+      background-size: cover;
   }
 }
